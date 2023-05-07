@@ -8,7 +8,12 @@ namespace TrowWebScraper.Models
     public class NowPlayingMovies
     {
         public string title { get; set; }
-        //public string details { get; set; }
-        //public string image { get; set; }
+        public string image { get; set; }
+
+        public NowPlayingMovies()
+        {
+            title = "";
+            image = "";
+        }
     }
 }
