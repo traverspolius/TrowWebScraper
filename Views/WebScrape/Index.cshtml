@@ -1,0 +1,32 @@
+﻿@model IEnumerable<TrowWebScraper.Models.NowPlayingMovies>
+@{
+    ViewData["Title"] = "Index";
+    Layout = null;
+}
+
+<div class="container">
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            <div class="panel-title">
+                <h3>NOW PLAYING</h3>
+            </div>
+        </div>
+        <div class="panel-body">
+            <table class="table table-responsive">
+                <thead>
+                    <tr>
+                        <th>Movie Title</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach(var item in Model)
+                    {
+                        <tr>
+                            <td>@item.title</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
